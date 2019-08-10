@@ -1,0 +1,217 @@
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Universal */
+html, body {
+    font-size: 1rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+section {
+    margin: 54px 0;
+}
+h3 {
+    margin-bottom: 1rem;
+
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.show {
+    opacity: 1 !important;
+    transition: opacity 500ms;
+}
+.hide {
+    opacity: 0 !important;
+    transition: opacity 500ms;
+}
+/* To alter nav visibility */
+.visible {
+    visibility: visible !important;
+}
+
+/* Back To Top Button */
+#backToTop {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(204, 204, 204, 0.8);
+    border-radius: 12.5px;
+
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+
+    opacity: 0;
+    visibility: collapse;
+}
+#backToTop svg {
+    width: 100%;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    opacity: 0;
+    visibility: collapse;
+}
+.navbar-light {
+    background-color: #fff !important;
+}
+.navbar-brand img {
+    max-height: 50px;
+}
+
+/* Landing Page */
+.landing {
+    position: relative;
+    width: 100%;
+    height: calc(85vh);
+    display: table;
+}
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+.landing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6); 
+}
+.caption {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.caption h3 {
+    font-size: -webkit-xxx-large;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem #000;
+    -webkit-transition: all 350ms ease;
+    -moz-transition: all 350ms ease;
+    transition: all 350ms ease;
+}
+.caption iframe {
+    max-width: 85vw;
+}
+
+/* Contact */
+#contact .btn-submit {
+    background-color: #263238 !important;
+}
+
+/* Footer */
+footer {
+    background-color: #263238;
+    color: #fff;
+    font-size: 0.9rem;
+}
+#mail-address a {
+    color: #000;
+}
+.btn-floating {
+    -webkit-box-shadow:
+        0 5px 11px 0 rgba(0,0,0,.18),
+        0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow:
+        0 5px 11px 0 rgba(0,0,0,.18),
+        0 4px 15px 0 rgba(0,0,0,.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+    z-index: 1;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+.btn-floating svg {
+    display: inline-block;
+    width: inherit;
+    text-align: center;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 47px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-li {
+    background-color: #0077B5 !important;
+}
+#copyright {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+
+    padding: 0.5rem 0;
+
+    text-align: center;
+    overflow: hidden;
+}
+#copyright a {
+    color: #fff;
+}
+
+/* Media Queries */
+/* Phones - Landscape Orientation */
+@media only screen and (orientation: landscape) {
+    .landing {
+        min-height: 600px;
+    }
+
+    .navbar-brand img, .navbar-collapse {
+        margin: -0.5rem 0;
+    }
+}
+
+/* Phones - Portait Orientation */
+@media screen and (min-width: 320px) and (orientation: portrait) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    section h4, section p {
+        text-align: center;
+    }
+}
