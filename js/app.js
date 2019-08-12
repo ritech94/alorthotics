@@ -12,12 +12,7 @@ var toTopBtn = document.getElementById('backToTop');
 
 // Control .navbar visibility by scrolling
 (function($) {
-    // Landing Page Height
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-        var landingHeight = 575;
-    } else {
-        var landingHeight = 500;
-    }
+    var landingHeight = 50;
 
     $(document).ready(function() {
         // Reset nav z-index to normal
@@ -29,7 +24,9 @@ var toTopBtn = document.getElementById('backToTop');
             fadeIn(toTopBtn);
         }
 
-        $(window).scroll(function() {
+        // alert();
+
+        $(window).scroll(function() {   
             if ($(this).scrollTop() > landingHeight) {
                 fadeIn(nav);
                 fadeIn(toTopBtn);

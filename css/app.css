@@ -9,6 +9,9 @@ html, body {
 .uppercase {
     text-transform: uppercase;
 }
+.text-bold {
+    font-weight: 700;
+}
 section {
     margin: 54px 0;
 }
@@ -17,7 +20,7 @@ h3 {
 
     font-size: 2.25rem;
     font-weight: 700;
-    text-align: center;
+    /* text-align: center; */
     text-transform: uppercase;
 }
 .show {
@@ -71,7 +74,7 @@ h3 {
 .landing {
     position: relative;
     width: 100%;
-    height: calc(85vh);
+    height: 100vh;
     display: table;
 }
 .home-wrap {
@@ -104,15 +107,37 @@ h3 {
     background-color: rgba(0, 0, 0, .6); 
 }
 .caption {
+    width: 95%;
     color: #fff;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 
     position: absolute;
     z-index: 10;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.caption-img {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.caption-img img {
+    max-width: 100%;
+}
+.caption hr {
+    border-bottom: 3px solid #fff;
+    width: 80%;
+}
+.caption a {
+    margin-top: 10px;
+}
+.caption h4 {
+    font-size: 1.75rem;
 }
 .caption h3 {
     font-size: -webkit-xxx-large;
@@ -196,10 +221,6 @@ footer {
 /* Media Queries */
 /* Phones - Landscape Orientation */
 @media only screen and (orientation: landscape) {
-    .landing {
-        min-height: 600px;
-    }
-
     .navbar-brand img, .navbar-collapse {
         margin: -0.5rem 0;
     }
@@ -209,9 +230,5 @@ footer {
 @media screen and (min-width: 320px) and (orientation: portrait) {
     .navbar {
         flex-direction: row;
-    }
-
-    section h4, section p {
-        text-align: center;
     }
 }
