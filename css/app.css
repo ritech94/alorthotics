@@ -202,14 +202,6 @@ footer {
     top: 50%;
     transform: translateY(-50%);
 }
-
-.btn-fb {
-    background-color: #000 !important;
-}
-
-.btn-li {
-    background-color: #0077B5 !important;
-}
 #copyright {
     background-color: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.6);
