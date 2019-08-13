@@ -23,45 +23,6 @@ h3 {
     /* text-align: center; */
     text-transform: uppercase;
 }
-.btn-floating {
-    -webkit-box-shadow:
-        0 5px 11px 0 rgba(0,0,0,.18),
-        0 4px 15px 0 rgba(0,0,0,.15);
-    box-shadow:
-        0 5px 11px 0 rgba(0,0,0,.18),
-        0 4px 15px 0 rgba(0,0,0,.15);
-    width: 47px;
-    height: 47px;
-    position: relative;
-    z-index: 1;
-    vertical-align: middle;
-    display: inline-block;
-    overflow: hidden;
-    -webkit-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    margin: 10px;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    padding: 0;
-    cursor: pointer;
-}
-.btn-floating svg {
-    display: inline-block;
-    width: inherit;
-    text-align: center;
-    color: #fff;
-    font-size: 1.25rem;
-    line-height: 47px;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
-
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.btn-li {
-    background-color: #000 !important;
-}
 .show {
     opacity: 1 !important;
     transition: opacity 500ms;
@@ -189,46 +150,4 @@ h3 {
 }
 .caption iframe {
     max-width: 85vw;
-}
-
-/* Contact */
-#contact .btn-submit {
-    background-color: #263238 !important;
-}
-
-/* Footer */
-footer {
-    background-color: #263238;
-    color: #fff;
-    font-size: 0.9rem;
-}
-#mail-address a {
-    color: #000;
-}
-#copyright {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.6);
-
-    padding: 0.5rem 0;
-
-    text-align: center;
-    overflow: hidden;
-}
-#copyright a {
-    color: #fff;
-}
-
-/* Media Queries */
-/* Phones - Landscape Orientation */
-@media only screen and (orientation: landscape) {
-    .navbar-brand img, .navbar-collapse {
-        margin: -0.5rem 0;
-    }
-}
-
-/* Phones - Portait Orientation */
-@media screen and (min-width: 320px) and (orientation: portrait) {
-    .navbar {
-        flex-direction: row;
-    }
 }
