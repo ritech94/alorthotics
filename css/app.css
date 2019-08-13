@@ -59,6 +59,9 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
 }
+.btn-li {
+    background-color: #000 !important;
+}
 .show {
     opacity: 1 !important;
     transition: opacity 500ms;
