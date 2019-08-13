@@ -89,10 +89,81 @@
                     <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis et aspernatur modi eos, laboriosam unde saepe porro repellat fugit ipsa consequatur omnis ipsam officia nobis adipisci tempora iure voluptate explicabo.</p>
                     <div class="social-icons">
-                        
+
                     </div>
                 </div>
             </section>
+
+            <!-- Products Section -->
+            <section id="products">
+                <div class="container">
+                    <h3>Products</h3>
+
+                    <h4>Orthotics</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi necessitatibus itaque tempora inventore repudiandae recusandae nam est sunt iste nisi odit dignissimos, officiis non voluptas quas sit sint. Voluptas, quaerat.</p>
+
+                    <h4>Footwear</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor corrupti quaerat harum eveniet. Doloremque magni reprehenderit placeat quos iste alias, dignissimos quasi! Neque, deleniti atque fuga nobis esse porro reiciendis?</p>
+
+                    <h4>1 on 1 Consultation</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, dolore pariatur natus hic accusamus nostrum dicta a at minima id iure enim assumenda fugiat eum quasi qui inventore recusandae voluptatum.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <div class="container">
+                    <h3>Contact Us</h3>
+
+                    <ul class="fa-ul mb-4 ml-0">
+                        <li id="mail-address">
+                            <a rel="noreferrer" href="mailto: alorthotics@gmail.com">
+                                <i class="fas fa-envelope-open mr-2 contact-icons"></i>
+                                alorthotics@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt mr-2 contact-icons"></i>
+                            (519) 281-0369
+                        </li>
+                        <li>
+                            <div id="social-icons">
+                                <a rel="noreferrer" title="LinkedIn" aria-label="LinkedIn" href="https://linkedin.com/in/riley-lewis-0383562b/" target="_blank" class="btn-floating btn-li mx-1 text-center">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="contact-form d-flex flex-column " method="POST">
+                        <div class="form-group">
+                            <input type="name" id="contact-name" class="form-control" placeholder="Name" name="name" aria-label="name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" class="form-control" placeholder="Email" name="email" aria-label="email" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="contact-message" type="text" placeholder="Message" rows="7" name="message" aria-label="message" required></textarea>
+                        </div>
+
+                        <button class="btn btn-submit btn-info" onclick="sendMail();">Submit</button>
+                        <div id="contact-status" class="w-75"></div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+
+                <!-- Copyright -->
+                <div id="copyright">
+                    &copy; <span id="year"></span> Copyright: 
+                    <a rel="noreferrer" href="/">AL Orthotics</a>
+                </div>
+            </footer>
         </div>
 
         <!-- Scripts -->
