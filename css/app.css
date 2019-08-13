@@ -192,6 +192,15 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
 }
+.social-icons a[title="Facebook"] {
+    background-color: #3B5998;
+}
+.social-icons a[title="Instagram"] {
+    background-color: #BC2A8D;
+}
+.social-icons a[title="LinkedIn"] {
+    background-color: #0077B5;
+}
 
 /* Footer */
 footer {
