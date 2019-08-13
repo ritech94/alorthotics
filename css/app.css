@@ -192,15 +192,6 @@ h3 {
     top: 50%;
     transform: translateY(-50%);
 }
-.social-icons a[title="Facebook"], .btn-facebook {
-    background-color: #3B5998;
-}
-.social-icons a[title="Instagram"], .btn-instagram {
-    background-color: #BC2A8D;
-}
-.social-icons a[title="LinkedIn"], .btn-linkedin {
-    background-color: #0077B5;
-}
 
 /* Footer */
 footer {
