@@ -202,12 +202,11 @@ footer {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .btn-fb {
-    background-color: #3B5998 !important;
+    background-color: #000 !important;
 }
-.btn-in {
-    background-color: #3F729B !important;
-}
+
 .btn-li {
     background-color: #0077B5 !important;
 }
