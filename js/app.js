@@ -12,7 +12,11 @@ var toTopBtn = document.getElementById('backToTop');
 
 // Control .navbar visibility by scrolling
 (function($) {
-    var landingHeight = 50;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var landingHeight = 10;
+    } else {
+        var landingHeight = 50;
+    }
 
     $(document).ready(function() {
         // Reset nav z-index to normal
