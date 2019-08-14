@@ -152,7 +152,20 @@ h3 {
     max-width: 85vw;
 }
 
+/* About */
+#about p.classification {
+    margin: -5px 0;
+}
+
+/* Reference */
+#reference a {
+    color: #000;
+}
+
 /* Contact */
+#mail-address a {
+    color: #000;
+}
 #contact .btn-submit {
     background-color: #263238;
 }
@@ -198,9 +211,6 @@ footer {
     background-color: #263238;
     color: #fff;
     font-size: 0.9rem;
-}
-#mail-address a {
-    color: #000;
 }
 #copyright {
     background-color: rgba(0, 0, 0, 0.2);
