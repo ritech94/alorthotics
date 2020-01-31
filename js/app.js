@@ -74,39 +74,34 @@ $(function() {
     $('#year').html(cYear);
 });
 
-// EmailJS
-function sendMail() {
-    alert('Email Me!');
-}
+$('#submit').on('click', (e) => {
+    e.preventDefault();
 
-// function sendMail() {
-//     var cName = document.getElementById('contact-name');
-//     var cEmail = document.getElementById('contact-email');
-//     var cPhone = document.getElementById('contact-phone');
-    
-//     // var cMessage = document.getElementById('contact-message');
-//     var cStatus = document.getElementById('contact-status');
+    var cName = document.getElementById('contact-name');
+    var cEmail = document.getElementById('contact-email');
+    var cPhone = document.getElementById('contact-phone');
+    var cStatus = document.getElementById('contact-status');
 
-//     if (cName.value != '' && cEmail.value != '' && cMessage.value != '') {
-//         // Send data via EmailJS
-//         emailjs.send('gmail', 'ritech',
-//         {
-//             "to_email": "ri.tech94@gmail.com",
-//             "from_email": "no-reply@alorthotics.ca",
-//             "contact_email": cEmail.value,
-//             "contact_name": cName.value,
-//             "contact_phone": cPhone.value,
-//             "contact_msg": "No Data"
-//         });
+    if (cName.value != '' && cEmail.value != '' && cPhone.value != '') {
+        // Send data via EmailJS
+        emailjs.send('gmail', 'ritech',
+        {
+            "to_email": "alewisorthotics@gmail.com",
+            "from_email": "no-reply@alorthotics.ca",
+            "contact_email": cEmail.value,
+            "contact_name": cName.value,
+            "contact_phone": cPhone.value,
+            "contact_msg": "No Data"
+        });
 
-//         // Clear Form Fields
-//         cName.value = '';
-//         cEmail.value = '';
-//         cMessage.value = '';
+        // Clear Form Fields
+        cName.value = '';
+        cEmail.value = '';
+        cPhone.value = '';
 
-//         // Display Sent Message
-//         cStatus.innerHTML = 'Message Sent!';
-//     } else {
-//         cStatus.innerHTML = 'Please fill the missing fields!';
-//     }
-// }
+        // Display Send Message
+        cStatus.innerText = 'Message Sent!';
+    } else {
+        cStatus.innerText = 'Please fill the missing fields!';
+    }
+})
