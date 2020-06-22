@@ -185,6 +185,9 @@ h3 {
 #products h4 {
     color: #000 !important;
 }
+#accordion h4 {
+    text-align: left !important;
+}
 
 /* Reference */
 #reference a {
